@@ -1,761 +1,426 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Ready Bootstrap Dashboard</title>
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-	<link rel="stylesheet" href="assets/css/ready.css">
-	<link rel="stylesheet" href="assets/css/demo.css">
-</head>
-<body>
-	<div class="wrapper">
-		<div class="main-header">
-			<div class="logo-header">
-				<a href="index.html" class="logo">
-					Ready Dashboard
-				</a>
-				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
-			</div>
-			<nav class="navbar navbar-header navbar-expand-lg">
-				<div class="container-fluid">
-					
-					<form class="navbar-left navbar-form nav-search mr-md-3" action="">
-						<div class="input-group">
-							<input type="text" placeholder="Search ..." class="form-control">
-							<div class="input-group-append">
-								<span class="input-group-text">
-									<i class="la la-search search-icon"></i>
-								</span>
-							</div>
-						</div>
-					</form>
-					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						<li class="nav-item dropdown hidden-caret">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="la la-envelope"></i>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown hidden-caret">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="la la-bell"></i>
-								<span class="notification">3</span>
-							</a>
-							<ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
-								<li>
-									<div class="dropdown-title">You have 4 new notification</div>
-								</li>
-								<li>
-									<div class="notif-center">
-										<a href="#">
-											<div class="notif-icon notif-primary"> <i class="la la-user-plus"></i> </div>
-											<div class="notif-content">
-												<span class="block">
-													New user registered
-												</span>
-												<span class="time">5 minutes ago</span> 
-											</div>
-										</a>
-										<a href="#">
-											<div class="notif-icon notif-success"> <i class="la la-comment"></i> </div>
-											<div class="notif-content">
-												<span class="block">
-													Rahmad commented on Admin
-												</span>
-												<span class="time">12 minutes ago</span> 
-											</div>
-										</a>
-										<a href="#">
-											<div class="notif-img"> 
-												<img src="assets/img/profile2.jpg" alt="Img Profile">
-											</div>
-											<div class="notif-content">
-												<span class="block">
-													Reza send messages to you
-												</span>
-												<span class="time">12 minutes ago</span> 
-											</div>
-										</a>
-										<a href="#">
-											<div class="notif-icon notif-danger"> <i class="la la-heart"></i> </div>
-											<div class="notif-content">
-												<span class="block">
-													Farrah liked Admin
-												</span>
-												<span class="time">17 minutes ago</span> 
-											</div>
-										</a>
-									</div>
-								</li>
-								<li>
-									<a class="see-all" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span >Hizrian</span></span> </a>
-							<ul class="dropdown-menu dropdown-user">
-								<li>
-									<div class="user-box">
-										<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
-										<div class="u-text">
-											<h4>Hizrian</h4>
-											<p class="text-muted">hello@themekita.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
-										</div>
-									</li>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
-									<a class="dropdown-item" href="#"></i> My Balance</a>
-									<a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
-								</ul>
-								<!-- /.dropdown-user -->
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			<div class="sidebar">
-				<div class="scrollbar-inner sidebar-wrapper">
-					<div class="user">
-						<div class="photo">
-							<img src="assets/img/profile.jpg">
-						</div>
-						<div class="info">
-							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-								<span>
-									Hizrian
-									<span class="user-level">Administrator</span>
-									<span class="caret"></span>
-								</span>
-							</a>
-							<div class="clearfix"></div>
+<html lang="en">
 
-							<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
-								<ul class="nav">
-									<li>
-										<a href="#profile">
-											<span class="link-collapse">My Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#edit">
-											<span class="link-collapse">Edit Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#settings">
-											<span class="link-collapse">Settings</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<ul class="nav">
-						<li class="nav-item active">
-							<a href="index.html">
-								<i class="la la-dashboard"></i>
-								<p>Dashboard</p>
-								<span class="badge badge-count">5</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="components.html">
-								<i class="la la-table"></i>
-								<p>Components</p>
-								<span class="badge badge-count">14</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="forms.html">
-								<i class="la la-keyboard-o"></i>
-								<p>Forms</p>
-								<span class="badge badge-count">50</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="tables.html">
-								<i class="la la-th"></i>
-								<p>Tables</p>
-								<span class="badge badge-count">6</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="notifications.html">
-								<i class="la la-bell"></i>
-								<p>Notifications</p>
-								<span class="badge badge-success">3</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="typography.html">
-								<i class="la la-font"></i>
-								<p>Typography</p>
-								<span class="badge badge-danger">25</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="icons.html">
-								<i class="la la-fonticons"></i>
-								<p>Icons</p>
-							</a>
-						</li>
-						<li class="nav-item update-pro">
-							<button  data-toggle="modal" data-target="#modalUpdate">
-								<i class="la la-hand-pointer-o"></i>
-								<p>Update To Pro</p>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="main-panel">
-				<div class="content">
-					<div class="container-fluid">
-						<h4 class="page-title">Dashboard</h4>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="card card-stats card-warning">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-users"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Visitors</p>
-													<h4 class="card-title">1,294</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats card-success">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-bar-chart"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Sales</p>
-													<h4 class="card-title">$ 1,345</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats card-danger">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-newspaper-o"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Subscribers</p>
-													<h4 class="card-title">1303</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats card-primary">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-check-circle"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Order</p>
-													<h4 class="card-title">576</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-<!-- 							<div class="col-md-3">
-								<div class="card card-stats">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center icon-warning">
-													<i class="la la-pie-chart text-warning"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Number</p>
-													<h4 class="card-title">150GB</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-bar-chart text-success"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Revenue</p>
-													<h4 class="card-title">$ 1,345</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-times-circle-o text-danger"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Errors</p>
-													<h4 class="card-title">23</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-heart-o text-primary"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Followers</p>
-													<h4 class="card-title">+45K</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="card">
-									<div class="card-header">
-										<h4 class="card-title">Task</h4>
-										<p class="card-category">Complete</p>
-									</div>
-									<div class="card-body">
-										<div id="task-complete" class="chart-circle mt-4 mb-3"></div>
-									</div>
-									<div class="card-footer">
-										<div class="legend"><i class="la la-circle text-primary"></i> Completed</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-9">
-								<div class="card">
-									<div class="card-header">
-										<h4 class="card-title">World Map</h4>
-										<p class="card-category">
-										Map of the distribution of users around the world</p>
-									</div>
-									<div class="card-body">
-										<div class="mapcontainer">
-											<div class="map">
-												<span>Alternative content for the map</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
-						<div class="row row-card-no-pd">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-body">
-										<p class="fw-bold mt-1">My Balance</p>
-										<h4><b>$ 3,018</b></h4>
-										<a href="#" class="btn btn-primary btn-full text-left mt-3 mb-3"><i class="la la-plus"></i> Add Balance</a>
-									</div>
-									<div class="card-footer">
-										<ul class="nav">
-											<li class="nav-item"><a class="btn btn-default btn-link" href="#"><i class="la la-history"></i> History</a></li>
-											<li class="nav-item ml-auto"><a class="btn btn-default btn-link" href="#"><i class="la la-refresh"></i> Refresh</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-5">
-								<div class="card">
-									<div class="card-body">
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Profit</span>
-												<span class="text-muted fw-bold"> $3K</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="78%"></div>
-											</div>
-										</div>
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Orders</span>
-												<span class="text-muted fw-bold"> 576</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="65%"></div>
-											</div>
-										</div>
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Tasks Complete</span>
-												<span class="text-muted fw-bold"> 70%</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="70%"></div>
-											</div>
-										</div>
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Open Rate</span>
-												<span class="text-muted fw-bold"> 60%</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="60%"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats">
-									<div class="card-body">
-										<p class="fw-bold mt-1">Statistic</p>
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center icon-warning">
-													<i class="la la-pie-chart text-warning"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Number</p>
-													<h4 class="card-title">150GB</h4>
-												</div>
-											</div>
-										</div>
-										<hr/>
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-heart-o text-primary"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Followers</p>
-													<h4 class="card-title">+45K</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-header">
-										<h4 class="card-title">Users Statistics</h4>
-										<p class="card-category">
-										Users statistics this month</p>
-									</div>
-									<div class="card-body">
-										<div id="monthlyChart" class="chart chart-pie"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-8">
-								<div class="card">
-									<div class="card-header">
-										<h4 class="card-title">2018 Sales</h4>
-										<p class="card-category">
-										Number of products sold</p>
-									</div>
-									<div class="card-body">
-										<div id="salesChart" class="chart"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="card">
-									<div class="card-header ">
-										<h4 class="card-title">Table</h4>
-										<p class="card-category">Users Table</p>
-									</div>
-									<div class="card-body">
-										<table class="table table-head-bg-success table-striped table-hover">
-											<thead>
-												<tr>
-													<th scope="col">#</th>
-													<th scope="col">First</th>
-													<th scope="col">Last</th>
-													<th scope="col">Handle</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>1</td>
-													<td>Mark</td>
-													<td>Otto</td>
-													<td>@mdo</td>
-												</tr>
-												<tr>
-													<td>2</td>
-													<td>Jacob</td>
-													<td>Thornton</td>
-													<td>@fat</td>
-												</tr>
-												<tr>
-													<td>3</td>
-													<td colspan="2">Larry the Bird</td>
-													<td>@twitter</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="card card-tasks">
-									<div class="card-header ">
-										<h4 class="card-title">Tasks</h4>
-										<p class="card-category">To Do List</p>
-									</div>
-									<div class="card-body ">
-										<div class="table-full-width">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>
-															<div class="form-check">
-																<label class="form-check-label">
-																	<input class="form-check-input  select-all-checkbox" type="checkbox" data-select="checkbox" data-target=".task-select">
-																	<span class="form-check-sign"></span>
-																</label>
-															</div>
-														</th>
-														<th>Task</th>
-														<th>Action</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>
-															<div class="form-check">
-																<label class="form-check-label">
-																	<input class="form-check-input task-select" type="checkbox">
-																	<span class="form-check-sign"></span>
-																</label>
-															</div>
-														</td>
-														<td>Planning new project structure</td>
-														<td class="td-actions text-right">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<div class="form-check">
-																<label class="form-check-label">
-																	<input class="form-check-input task-select" type="checkbox">
-																	<span class="form-check-sign"></span>
-																</label>
-															</div>
-														</td>
-														<td>Update Fonts</td>
-														<td class="td-actions text-right">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<div class="form-check">
-																<label class="form-check-label">
-																	<input class="form-check-input task-select" type="checkbox">
-																	<span class="form-check-sign"></span>
-																</label>
-															</div>
-														</td>
-														<td>Add new Post
-														</td>
-														<td class="td-actions text-right">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<div class="form-check">
-																<label class="form-check-label">
-																	<input class="form-check-input task-select" type="checkbox">
-																	<span class="form-check-sign"></span>
-																</label>
-															</div>
-														</td>
-														<td>Finalise the design proposal</td>
-														<td class="td-actions text-right">
-															<div class="form-button-action">
-																<button type="button" data-toggle="tooltip" title="Edit Task" class="btn btn-link <btn-simple-primary">
-																	<i class="la la-edit"></i>
-																</button>
-																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
-																	<i class="la la-times"></i>
-																</button>
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-									<div class="card-footer ">
-										<div class="stats">
-											<i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<footer class="footer">
-					<div class="container-fluid">
-						<nav class="pull-left">
-							<ul class="nav">
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										ThemeKita
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										Help
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#license/#free-item">
-										Licenses
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="copyright ml-auto">
-							2018, made with <i class="la la-heart heart text-danger"></i> by <a href="#">ThemeKita</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>				
-					</div>
-				</footer>
-			</div>
-		</div>
-	</div>
-	<!-- Modal -->
-	<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header bg-primary">
-					<h6 class="modal-title"><i class="la la-frown-o"></i> Under Development</h6>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body text-center">									
-					<p>Currently the pro version of the <b>Ready Dashboard</b> Bootstrap is in progress development</p>
-					<p>
-						<b>We'll let you know when it's done</b></p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Space Dynamic - SEO HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+    
+TemplateMo 562 Space Dynamic
+
+https://templatemo.com/tm-562-space-dynamic
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4>Spac<span>Dyna</span></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About Us</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
+              <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
+              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h6>Welcome to Space Dynamic</h6>
+                <h2>We Make <em>Digital Ideas</em> &amp; <span>SEO</span> Marketing</h2>
+                <p>Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>.</p>
+                <form id="search" action="#" method="GET">
+                  <fieldset>
+                    <input type="address" name="address" class="email" placeholder="Your website URL..." autocomplete="on" required>
+                  </fieldset>
+                  <fieldset>
+                    <button type="submit" class="main-button">Analyze Site</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/banner-right-image.png" alt="team meeting">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="assets/images/about-left-image.png" alt="person graphic">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-01.png" alt="reporting">
+                  </div>
+                  <div class="right-text">
+                    <h4>Data Analysis</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-02.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Data Reporting</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-03.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Web Analytics</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-04.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>SEO Suggestions</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <img src="assets/images/services-left-image.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2>Grow your website with our <em>SEO</em> service &amp; <span>Project</span> Ideas</h2>
+            <p>Space Dynamic HTML5 template is free to use for your website projects. However, you are not permitted to redistribute the template ZIP file on any CSS template collection websites. Please contact us for more information. Thank you for your kind cooperation.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="first-bar progress-skill-bar">
+                <h4>Website Analysis</h4>
+                <span>84%</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="second-bar progress-skill-bar">
+                <h4>SEO Reports</h4>
+                <span>88%</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="third-bar progress-skill-bar">
+                <h4>Page Optimizations</h4>
+                <span>94%</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>See What Our Agency <em>Offers</em> &amp; What We <span>Provide</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>SEO Analysis</h4>
+                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Website Reporting</h4>
+                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="hidden-content">
+                <h4>Performance Tests</h4>
+                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="hidden-content">
+                <h4>Data Analysis</h4>
+                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="blog" class="our-blog section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Check Out What Is <em>Trending</em> In Our Latest <span>News</span></h2>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="top-dec">
+            <img src="assets/images/blog-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="left-image">
+            <a href="#"><img src="assets/images/big-blog-thumb.jpg" alt="Workspace Desktop"></a>
+            <div class="info">
+              <div class="inner-content">
+                <ul>
+                  <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>
+                  <li><i class="fa fa-users"></i> TemplateMo</li>
+                  <li><i class="fa fa-folder"></i> Branding</li>
+                </ul>
+                <a href="#"><h4>SEO Agency &amp; Digital Marketing</h4></a>
+                <p>Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...</p>
+                <div class="main-blue-button">
+                  <a href="#">Discover More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="right-list">
+            <ul>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-calendar"></i> 18 Mar 2021</span>
+                  <a href="#"><h4>New Websites &amp; Backlinks</h4></a>
+                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
+                </div>
+                <div class="right-image">
+                  <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                </div>
+              </li>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-calendar"></i> 14 Mar 2021</span>
+                  <a href="#"><h4>SEO Analysis &amp; Content Ideas</h4></a>
+                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
+                </div>
+                <div class="right-image">
+                  <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                </div>
+              </li>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-calendar"></i> 06 Mar 2021</span>
+                  <a href="#"><h4>SEO Tips &amp; Digital Marketing</h4></a>
+                  <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
+                </div>
+                <div class="right-image">
+                  <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
+            <div class="phone-info">
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2021 Space Dynamic Co. All Rights Reserved. 
+          
+          <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
 </body>
-<script src="assets/js/core/jquery.3.2.1.min.js"></script>
-<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-<script src="assets/js/core/popper.min.js"></script>
-<script src="assets/js/core/bootstrap.min.js"></script>
-<script src="assets/js/plugin/chartist/chartist.min.js"></script>
-<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
-<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
-<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
-<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-<script src="assets/js/ready.min.js"></script>
-<script src="assets/js/demo.js"></script>
 </html>
